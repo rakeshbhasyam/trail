@@ -4,7 +4,7 @@ import uuid
 
 
 class Portfolio:
-    def __init__(self, file_path="C:/Users/sanni/Downloads/Rakesh/rakesh_projects/cold_email_generation_tool/app/resource/my_portfolio.csv"):
+    def __init__(self, file_path="C:/Users/sanni/Downloads/Rakesh/rakesh_projects/cold_email_generation_tool/my_portfolio.csv"):
         self.file_path = file_path
         self.data = pd.read_csv(file_path)
         self.chroma_client = chromadb.PersistentClient('vectorstore')
